@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collect-container{
+  @apply fixed left-8 top-8 z-[999999] rounded-xl bg-[#F8F9FC] h-[calc(100vh-64px)];
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.01);
+}
+.chkbox-switch {
+  .chkbox-slider:before {
+    content: "";
+    @apply absolute w-2 h-2 rounded-full bg-[#34A853] top-1/2 left-1 -mt-1 opacity-50 transition-all duration-500;
+  }
+  input:checked + .chkbox-slider:before {
+    @apply opacity-100 transform-gpu translate-x-2;
+  }
+}
+.search-input{
+  @apply text-sm h-10 w-full rounded-md px-2 pl-8 focus:outline-none;
+  background: url(./assets/images/search-icon.svg) no-repeat center left 12px #EEEEEE;
+}
