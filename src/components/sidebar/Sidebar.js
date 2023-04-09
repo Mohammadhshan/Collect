@@ -22,7 +22,7 @@ const Sidebar = (props) => {
                 </div>
             </div>
         </div>
-        <Tooltip anchorSelect=".sidemenu-collect" place="right" offset="10" className="px-2 py-1.5 rounded bg-[#505051] text-xs font-medium font-outfit"/>
+        <Tooltip anchorSelect=".sidemenu-collect" place="right" offset="14" className="px-2 py-1.5 rounded bg-[#505051] text-xs font-medium font-outfit"/>
     </div>
   );
 };
